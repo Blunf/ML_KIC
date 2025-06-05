@@ -1,5 +1,5 @@
-## 지식산업센터 활성화 분석 및 적합도측정 모델 개발 - 머신러닝 프로젝트
-Machine Learning Project _ Development of Knowledge Industry Center Fit Measurement Model
+## 지식산업센터 분석 및 머신러닝 추천 모델 개발 프로젝트
+Knowledge Industry Center Analysis and Machine Learning Recommendation Model Development Project
 
 - 기간: ‘25년 4월 ~ ‘25년 6월(3개월)
 
