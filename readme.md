@@ -46,7 +46,7 @@ Knowledge Industry Center Analysis and Machine Learning Recommendation Model Dev
   - 거리 기반 점수화 + 조화평균 사용
 
 ## 모델 프로세스
-![프로세스](모델Flow이미지.png)
+![프로세스](./모델Flow이미지.png)
 
 
 ## 추천 모델 설계
