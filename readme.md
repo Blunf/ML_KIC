@@ -47,7 +47,7 @@ Knowledge Industry Center Analysis and Machine Learning Recommendation Model Dev
 
 ## 모델 프로세스
 
-![프로세스](./모델Flow이미지.png)
+![프로세스](./FlowImage.png)
 
 ## 추천 모델 설계
 
