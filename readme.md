@@ -16,20 +16,15 @@ Knowledge Industry Center Analysis and Machine Learning Recommendation Model Dev
 | 머신러닝 | Scikit-learn, Gensim (LDA), KMeans |
 | 시각화 | Matplotlib, Seaborn, Plotly |
 
-- 주요 내용
-  - python을 활용한 데이터 전처리 및 클러스터링
-  - 지식산업센터를 기준으로 외부/ 내부 변수 / 입주 기업의 특성을 합해서 적합도 점수 산출
-  - 랜덤 포레스트, XGBoost + 다중회귀 활용
 
-
-## ? 프로젝트 개요
+## 프로젝트 개요
 
 - 기업의 재무구조와 유사한 기업들이 선택한 부동산 데이터를 기반으로 매물 추천
 - 재무 정보만으로 실제 입주 여부를 예측하여 효율적이고 정량적인 추천 시스템 제공
 - 추천 후보군 수, 각 평가 지표의 가중치를 데이터 기반으로 최적화
 - 입주 기업들의 특성을 분석하여 비즈니스 인사이트 도출
 
-## ? 목차
+## 목차
 
 1. [데이터 수집 및 전처리](#-데이터-수집-및-전처리)
 2. [추천 모델 설계](#-추천-모델-설계)
@@ -37,9 +32,8 @@ Knowledge Industry Center Analysis and Machine Learning Recommendation Model Dev
 4. [주요 인사이트](#-주요-인사이트)
 5. [한계점 및 개선 방향](#-한계점-및-개선-방향)
 
----
 
-## ? 데이터 수집 및 전처리
+## 데이터 수집 및 전처리
 
 - **입주 기업 데이터**
   - 출처: 중소기업현황정보시스템
@@ -51,9 +45,11 @@ Knowledge Industry Center Analysis and Machine Learning Recommendation Model Dev
   - 지하철, 도로, 은행 접근성 종합 평가
   - 거리 기반 점수화 + 조화평균 사용
 
----
+## 모델 프로세스
+![프로세스](모델Flow이미지.png)
 
-## ? 추천 모델 설계
+
+## 추천 모델 설계
 
 - **핵심 로직**
   - 입력기업의 재무정보로 유사 기업 Top K 추출
@@ -69,9 +65,8 @@ Knowledge Industry Center Analysis and Machine Learning Recommendation Model Dev
   - Optuna를 이용해 w1~w5 (가중치), k (추천 개수) 최적화
   - 추천 정확도(Precision@K)를 기준으로 평가
 
----
 
-## ? 모델 성능 평가
+## 모델 성능 평가
 
 - **Precision@K**
   - 최적 추천 개수: `k=13`
@@ -81,9 +76,8 @@ Knowledge Industry Center Analysis and Machine Learning Recommendation Model Dev
   - 영향력 가장 큰 요인: `기업 규모`, `평당 매매가`
   - AUC: `0.824`
 
----
 
-## ? 주요 인사이트
+## 주요 인사이트
 
 1. **기업 규모가 유사할수록 매물 선택도 유사**  
    → 매출이나 자산보다는 규모가 부동산 결정에 더 직접적 영향을 미침
@@ -94,9 +88,7 @@ Knowledge Industry Center Analysis and Machine Learning Recommendation Model Dev
 3. **수도권-비수도권 간 인프라 격차 큼**  
    → 지하철 접근성은 수도권 중심으로 편중
 
----
-
-## ? 한계점 및 개선 방향
+## 한계점 및 개선 방향
 
 | 구분 | 설명 |
 |------|------|
