@@ -9,12 +9,13 @@ Knowledge Industry Center Analysis and Machine Learning Recommendation Model Dev
 
 - 기술 스택
 
-| 파트 | 사용 도구 |
-| --- | --- |
-| 크롤링 | Selenium,  Requests |
-| NLP | KoNLPy, Transformers(Huggingface), SBERT |
-| 머신러닝 | Scikit-learn, Gensim (LDA), KMeans |
-| 시각화 | Matplotlib, Seaborn, Plotly |
+| 파트       | 사용 도구                        |
+| ---------- | ------------------------------- |
+| 데이터 수집 | Selenium, Requests              |
+| 전처리     | pandas, numpy                   |
+| 머신러닝   | scikit-learn, KMeans, Gensim    |
+| 자연어처리 | KoNLPy, Transformers, SBERT     |
+| 시각화     | matplotlib, seaborn, plotly     |
 
 
 ## 프로젝트 개요
